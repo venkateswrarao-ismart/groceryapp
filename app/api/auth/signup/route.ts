@@ -5,6 +5,7 @@ import type { UserRole } from "@/lib/supabase";
 import { createClient } from "@/lib/supabase/client"
 
 export async function POST(request: NextRequest) {
+  //testing command
   try {
     const { email, password, full_name, role = "customer", phone, address } = await request.json();
 
